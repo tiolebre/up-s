@@ -1,0 +1,45 @@
+/* feed.css */
+
+/* Garante fundo azul atrás do container */
+body {
+  background: #5e94ff;
+}
+
+/* Postar */
+.postar.card {
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.postar textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Botões de mídia */
+.botoes-midia .btn {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Feed de amigos */
+.friend-post__avatar {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+/* Card de patrocinado */
+.col-md-3 .card {
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Responsivo: diminui margem interna */
+@media (max-width: 767px) {
+  .container {
+    padding: 0 10px;
+  }
+}

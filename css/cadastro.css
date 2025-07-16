@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+body {
+  font-family: sans-serif;
+  background: #5e94ff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ 
+/* Container central, largo, mas centralizado */
+.login-container {
+  width: 95%;
+  max-width: 850px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  overflow-y: auto;
+  max-height: 90vh;
+}
+ 
+/* Logo e slogan centralizados */
+.logo-login {
+  text-align: center;
+  margin-bottom: 20px;
+}
+ 
+.logo-login img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 8px;
+}
+ 
+.slogan-login {
+  font-size: 14px;
+  color: #555;
+}
+ 
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ 
+form label {
+  align-self: flex-start;
+  margin-left: 10%;
+  font-size: 14px;
+  color: #333;
+  margin-top: 12px;
+}
+ 
+form input,
+form textarea {
+  width: 80%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+ 
+form textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+ 
+/* Botão principal */
+form button {
+  width: 85%;
+  padding: 12px;
+  margin-top: 20px;
+  background: linear-gradient(to right, #0099ff, #0055ff);
+  color: #fff;
+  border: none;
+  border-radius: 55px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+ 
+form button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.25);
+}
+ 
+/* Botões sociais */
+.social-icons {
+  text-align: center;
+  margin-top: 20px;
+}
+ 
+.social-icons a {
+  display: inline-block;
+  background: #fff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 10px;
+  color: #fff;
+  font-size: 24px;
+  transition: 0.3s;
+}
+ 
+.social-icons a.facebook {
+  background: #3b5998;
+}
+ 
+.social-icons a.google {
+  background: #db4437;
+}
+ 
+.social-icons a:hover {
+  transform: scale(1.1);
+}
+ 
+/* Links finais */
+.login-container p {
+  text-align: center;
+  margin-top: 15px;
+  color: #ff802b;
+}
+ 
+.login-container p a {
+  color: #3498db;
+  text-decoration: none;
+}
+ 
+.login-container p a:hover {
+  text-decoration: underline;
+}
+ 
+/* Footer fixo igual login */
+footer {
+  background: linear-gradient(to right, #9ad2f8, #8cb1fc);
+  color: white;
+  text-align: center;
+  padding: 8px;
+  font-size: 14px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}

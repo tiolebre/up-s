@@ -1,0 +1,74 @@
+/* Container branco que envolve a grade */
+.ups-friends-container {
+  background: #fff;
+  padding: 40px 20px;
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: none;
+  text-align: center;
+  width: 100%;
+  max-width: 800px; /* Definindo a largura máxima */
+  margin: 0 auto; /* Centraliza a container */
+}
+
+/* Wrapper para centralizar a grade de amigos */
+.ups-friends-grid-wrapper {
+  display: flex;
+  justify-content: center; /* Alinha a grade ao centro */
+  width: 100%;
+}
+
+/* Grade de amigos com limite de largura */
+.ups-friends-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 colunas */
+  gap: 24px;
+  justify-items: center;
+  width: 100%;
+  margin: 0 auto; /* Centraliza a grid */
+}
+
+/* Estilo dos cards dos amigos */
+.ups-friend-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+.ups-friend-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #8cb1fc;
+}
+
+.ups-friend-card span {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #05386B;
+  font-weight: 500;
+}
+
+.ups-friend-card:hover {
+  transform: scale(1.05);
+}
+
+/* Responsivo */
+@media (max-width: 992px) {
+  .ups-friends-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas em telas médias */
+  }
+}
+
+@media (max-width: 768px) {
+  .ups-friends-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas em tablets */
+  }
+}
+
+@media (max-width: 500px) {
+  .ups-friends-grid {
+    grid-template-columns: 1fr; /* 1 coluna em telas pequenas */
+  }
+}

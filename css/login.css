@@ -1,0 +1,93 @@
+/* Reset (herdado do site principal) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+/* Fundo similar */
+body {
+  font-family: sans-serif;
+  background: #5e94ff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ 
+/* Container login reaproveita sua classe, só ajusta largura */
+.login-container {
+  width: 95%;
+  max-width: 400px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+ 
+/* Logo e slogan */
+.logo-login img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 8px;
+}
+ 
+.slogan-login {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+ 
+/* Inputs e botão reaproveitam, mas centralizam */
+form input {
+  width: 80%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+ 
+form button {
+  width: 85%;
+  padding: 10px;
+  margin-top: 15px;
+  background: linear-gradient(to right, #0099ff, #0055ff);
+  color: #fff;
+  border: none;
+  border-radius: 55px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+ 
+form button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.25);
+}
+ 
+/* Links e mensagens */
+.login-container p a {
+  color: #3498db;
+  text-decoration: none;
+}
+.login-container p a:hover {
+  text-decoration: underline;
+}
+ 
+.login-container p {
+  margin-top: 15px;
+  color: #ff802b;
+}
+/* Rodapé */
+footer {
+  background: linear-gradient(to right, #9ad2f8, #8cb1fc);
+  color: white;
+  text-align: center;
+  padding: 8px;
+  font-size: 14px;
+  margin-top: auto;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
